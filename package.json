@@ -1,5 +1,5 @@
 {
-  "homepage": "https://WellingtonPereiraLuiz.github.io/LkCursos_Temporizador_Enem",
+  "homepage": "https://WellingtonPereiraLuiz/LkCursos_Temporizador_Enem",
   "name": "lk-cursos-website",
   "private": true,
   "version": "1.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "main -d dist"
     
   },
   "dependencies": {
