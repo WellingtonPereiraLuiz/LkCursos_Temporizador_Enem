@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
       >
         <div className="w-full max-w-3xl mx-auto mb-4">
           <img 
-            src="/imagen/logo e tema.png"
+            src="/LkCursos_Temporizador_Enem/imagen/logo.png"
             alt="LK Cursos Logo"
             className="w-full h-auto"
           />

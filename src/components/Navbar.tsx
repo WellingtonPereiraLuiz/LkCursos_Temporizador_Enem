@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  AppBar, 
-  Toolbar, 
-  Typography, 
-  Container, 
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Container,
   Box,
   Button
 } from '@mui/material';
@@ -21,8 +21,8 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <AppBar 
-      position="fixed" 
+    <AppBar
+      position="fixed"
       sx={{
         background: isScrolled ? 'rgba(26, 26, 26, 0.95)' : 'transparent',
         boxShadow: isScrolled ? '0px 2px 4px rgba(0, 0, 0, 0.1)' : 'none',
@@ -32,14 +32,16 @@ const Navbar: React.FC = () => {
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
-            <img 
-              src="/imagen/icone.png" 
-              alt="LK Cursos" 
-              style={{ 
+            <img
+              src="/LkCursos_Temporizador_Enem/imagen/icone.png"
+              alt="LK Cursos"
+              style={{
                 height: '32px',
                 width: 'auto',
                 marginRight: '8px'
-              }} 
+              }}
+
+
             />
             <Typography
               variant="h6"
