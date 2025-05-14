@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #1A1A1A;
+  --section-dark: #2B2B2B;
+  --accent: #A8E10C;
+  --accent-hover: #6AFF00;
+  --owl-eye-gold: #FFD700;
+  --owl-eye-red: #FF0000;
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.neon-text {
+  text-shadow: 0 0 1px var(--accent), 0 0 2px var(--accent-hover);
+}
+
+.neon-border {
+  box-shadow: 0 0 1px var(--accent), 0 0 2px var(--accent-hover);
+}
+
+.section {
+  min-height: 100vh;
+  padding: 6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 3s infinite;
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes glowBorder {
+  0%, 100% { box-shadow: 0 0 1px var(--accent), 0 0 2px var(--accent); }
+  50% { box-shadow: 0 0 2px var(--accent-hover), 0 0 3px var(--accent-hover); }
+}
+
+.glow-border {
+  animation: glowBorder 2s infinite;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+button, .button {
+  background-color: var(--accent);
+  color: #000;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover, .button:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(168, 225, 12, 0.3);
+}
+
+.notification-panel {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.notification-panel.show {
+  transform: translateX(0);
+}
